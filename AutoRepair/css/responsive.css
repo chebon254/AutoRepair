@@ -1,16 +1,18 @@
 /* == RESPONSIVE == */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 994px) {
-    
+
     ::-webkit-scrollbar {
         width: 4px !important;
     }
-    .container{
+
+    .container {
         margin: auto;
         min-width: 90%;
         max-width: 95%;
     }
-    .links{
+
+    .links {
         height: 100vh;
         width: 320px;
         position: fixed;
@@ -26,10 +28,12 @@
         background-color: var(--back-color);
         overflow: auto;
     }
-    .links.active{
+
+    .links.active {
         right: 0%;
     }
-    .cancel-btn{
+
+    .cancel-btn {
         height: 40px;
         width: 40px;
         border-radius: 20px;
@@ -47,22 +51,26 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .container{
+    .container {
         margin: auto;
         min-width: 85%;
         max-width: 1200px !important;
     }
-    .links{
+
+    .links {
         padding: 0px 0px;
         display: flex;
         align-items: center !important;
         justify-content: space-between;
     }
-    .menu-bar{
+
+    .menu-bar {
         display: none !important;
     }
-    .cancel{
+
+    .cancel {
         display: none;
     }
 }
+
 /* == || RESPONSIVE == */

@@ -9,13 +9,15 @@
 // }
   // == End of Theme Change Script == //
 
-  /* == BACK TO TOP == */
+/* == BACK TO TOP == */
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
 /* == BACK TO TOP == */
+
+
 //Create A Responsive Menu Hide Show Side Menu
 const header = document.querySelector(".header-scroll");
 const menuBtn = document.querySelector(".menu-btn");

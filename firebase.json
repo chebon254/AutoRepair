@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "AutoRepair",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

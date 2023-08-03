@@ -1,20 +1,24 @@
 // == Theme Change Script == //
-// function setThemePreference() {
+const DarkClick = document.querySelector(".btn-dark-theme");
+const LightClick = document.querySelector(".btn-light-theme");
 
-//     if () {
-//         document.querySelector('.body-effect').setAttribute("data-theme", "dark_theme");
-//     } else {
-//         document.querySelector('.body-effect').setAttribute("data-theme", "light_theme");
-//     }
-// }
-  // == End of Theme Change Script == //
+// == Dark Theme == //
+DarkClick.onclick = () => {
+  document.querySelector('.body-effect').setAttribute("data-theme", "dark_theme");
+}
+
+// == Dark Theme == //
+LightClick.onclick = () => {
+  document.querySelector('.body-effect').setAttribute("data-theme", "light_theme");
+}
+// == End of Theme Change Script == //
 
 /* == BACK TO TOP == */
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 /* == BACK TO TOP == */
 
 
@@ -24,8 +28,8 @@ const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const menu = document.querySelector(".links");
 // Onscroll Change Nav Bar Background
-window.onscroll = ()=>{
-    this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
+window.onscroll = () => {
+  this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
 }
 /* == ANIMATION CSS == */
 function reveal() {
@@ -46,13 +50,13 @@ window.addEventListener("scroll", reveal);
 /* == ANIMATION CSS == */
 
 // Onclick For Menu Bar
-menuBtn.onclick = ()=>{
-    menu.classList.add("active");
-    menuBtn.classList.add("hide");
+menuBtn.onclick = () => {
+  menu.classList.add("active");
+  menuBtn.classList.add("hide");
 }
 
 // Onclick For Cancel Menu 
-cancelBtn.onclick = ()=>{
-    menu.classList.remove("active");
-    menuBtn.classList.remove("hide");
+cancelBtn.onclick = () => {
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
 }

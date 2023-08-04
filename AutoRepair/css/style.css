@@ -521,19 +521,15 @@ main {
 .choice-container h1.title {
   text-align: center;
   color: var(--color);
-  font-size: 58px;
   font-style: normal;
   font-weight: 700;
-  line-height: 82px;
 }
 
 .choice-container p.title {
   text-align: center;
   color: var(--orange);
-  font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 42px;
 }
 
 .choice-cards {
@@ -571,19 +567,15 @@ main {
 
 .choice-card h2 {
   color: var(--color);
-  font-size: 32px;
   font-style: normal;
   font-weight: 600;
-  line-height: 42px;
   margin: 0px 0px 16px;
 }
 
 .choice-card p {
   color: var(--color);
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
 }
 
 /* == || MAIN == */
@@ -609,6 +601,7 @@ footer {
 .footer-column {
   width: 290px;
   padding: 0px 0px 0px 6px;
+  margin: 10px 0px;
 }
 
 .footer-logo-image {

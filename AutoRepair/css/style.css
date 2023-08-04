@@ -6,7 +6,9 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
-
+button{
+  cursor:  pointer !important;
+}
 html {
   scroll-behavior: smooth;
   margin: 0;
@@ -119,13 +121,12 @@ header {
 }
 
 nav {
-  height: 55px;
+  height: 65px;
   width: 100%;
 }
 
 .nav-container {
-  height: 55px;
-  margin: auto;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,8 +144,9 @@ svg #lg-txt {
 }
 
 .links {
-  height: 55px;
-  width: fit-content !important;
+  height: 65px;
+  width: 100%;
+  max-width: 960px;
 }
 
 .nav-form {
@@ -154,11 +156,12 @@ svg #lg-txt {
   flex-wrap: wrap;
   height: 54px;
   width: 100%;
-  max-width: 560px;
+  max-width: 540px;
   min-width: 280px;
 }
 
 .nav-form .input-enclosure {
+  height: 100%;
   width: 100%;
   max-width: 426px;
   min-width: 250px;
@@ -170,11 +173,19 @@ svg #lg-txt {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+}
+.nav-form .input-enclosure svg{
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
 }
 
 .nav-form input {
+  height: 100%;
   width: 100%;
-  max-width: 286px;
+  max-width: 266px;
   min-width: 250px;
   border: 0px;
   outline: none;
@@ -183,7 +194,7 @@ svg #lg-txt {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  padding: 2px 2px 2px 30px !important;
+  padding: 2px 2px 2px 50px !important;
   background-color: var(--back-color);
   color: var(--color);
   border-right: 2px solid #636363 !important;
@@ -234,11 +245,13 @@ input[type="placeholder"] {
 }
 
 .help-drop {
+  width: 72px !important;
   overflow: hidden;
   margin: 0px 10px;
 }
 
 .help-drop .help-dropbtn {
+  height: 35px;
   width: 72px;
   font-size: 16px;
   border: none;
@@ -255,7 +268,11 @@ input[type="placeholder"] {
   align-items: center;
   justify-content: space-between;
 }
-
+.help-drop .help-dropbtn:hover,
+.help-drop .help-dropbtn:hover svg #lg-txt{
+  color: var(--orange);
+  fill: var(--orange) !important;
+}
 .help-drop:hover .help-dropbtn {
   background-color: var(--back-color);
 }
@@ -263,12 +280,16 @@ input[type="placeholder"] {
 .help-dropdown-content {
   display: none;
   position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: #00000000;
+}
+.padded{
+  margin-top: 26px;
   background-color: var(--back-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
-
 .help-dropdown-content a {
   float: none;
   color: var(--color);
@@ -277,7 +298,9 @@ input[type="placeholder"] {
   display: block;
   text-align: left;
 }
-
+.help-dropdown-content a:hover{
+  color: var(--orange) !important;
+}
 .help-dropdown-content a:hover {
   background-color: var(--back-color);
 }
@@ -314,19 +337,19 @@ input[type="placeholder"] {
 
 .nav-profile {
   overflow: hidden;
-  width: 137px;
+  width: fit-content;
+  padding: 0px 6px;
   margin: 0px 10px;
 }
 
 .nav-profile .profile-btn {
-  width: 137px;
   font-size: 16px;
+  padding: 0px 6px;
   border: none;
   outline: none;
   color: var(--color);
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -336,6 +359,7 @@ input[type="placeholder"] {
   height: 35px;
   width: 35px;
   border-radius: 17.5px;
+  margin-right: 10px;
 }
 
 .nav-profile:hover .profile-btn {
@@ -345,9 +369,7 @@ input[type="placeholder"] {
 .profile-dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--back-color);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -362,10 +384,12 @@ input[type="placeholder"] {
   outline: none;
   width: 100%;
   background-color: var(--back-color);
+  cursor: pointer;
 }
 
 .profile-dropdown-content button:hover {
   background-color: var(--back-color);
+  color: var(--orange);
 }
 
 .nav-profile:hover .profile-dropdown-content {
@@ -573,6 +597,7 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   color: var(--color);
   font-size: 16px;
   font-style: normal;
@@ -583,6 +608,7 @@ footer {
 
 .footer-column {
   width: 290px;
+  padding: 0px 0px 0px 6px;
 }
 
 .footer-logo-image {

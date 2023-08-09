@@ -277,13 +277,6 @@ input[type="placeholder"] {
   background-color: var(--back-color);
 }
 
-.help-dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-  background-color: #00000000;
-}
 .padded{
   margin-top: 26px;
   background-color: var(--back-color);
@@ -363,16 +356,7 @@ input[type="placeholder"] {
 }
 
 .nav-profile:hover .profile-btn {
-  background-color: var(--back-color);
-}
-
-.profile-dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-}
-
+  background-color: var(--back-color);   }
 
 .profile-dropdown-content button {
   float: none;

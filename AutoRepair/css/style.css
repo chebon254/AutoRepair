@@ -6,9 +6,11 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
-button{
-  cursor:  pointer !important;
+
+button {
+  cursor: pointer !important;
 }
+
 html {
   scroll-behavior: smooth;
   margin: 0;
@@ -175,7 +177,8 @@ svg #lg-txt {
   flex-wrap: wrap;
   position: relative;
 }
-.nav-form .input-enclosure svg{
+
+.nav-form .input-enclosure svg {
   position: absolute;
   top: 50%;
   left: 25px;
@@ -268,21 +271,24 @@ input[type="placeholder"] {
   align-items: center;
   justify-content: space-between;
 }
+
 .help-drop .help-dropbtn:hover,
-.help-drop .help-dropbtn:hover svg #lg-txt{
+.help-drop .help-dropbtn:hover svg #lg-txt {
   color: var(--orange);
   fill: var(--orange) !important;
 }
+
 .help-drop:hover .help-dropbtn {
   background-color: var(--back-color);
 }
 
-.padded{
+.padded {
   margin-top: 26px;
   background-color: var(--back-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+
 .help-dropdown-content a {
   float: none;
   color: var(--color);
@@ -291,9 +297,11 @@ input[type="placeholder"] {
   display: block;
   text-align: left;
 }
-.help-dropdown-content a:hover{
+
+.help-dropdown-content a:hover {
   color: var(--orange) !important;
 }
+
 .help-dropdown-content a:hover {
   background-color: var(--back-color);
 }
@@ -356,7 +364,8 @@ input[type="placeholder"] {
 }
 
 .nav-profile:hover .profile-btn {
-  background-color: var(--back-color);   }
+  background-color: var(--back-color);
+}
 
 .profile-dropdown-content button {
   float: none;
@@ -389,6 +398,107 @@ input[type="placeholder"] {
   font-size: 28px;
   color: var(--color);
   padding: 10px 20px;
+}
+
+/* Theme toggle styles */
+header .theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+header .toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
+
+header .theme-toggle-checkbox {
+  display: none;
+}
+
+header .theme-toggle-label {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .theme-toggle-checkbox:checked+.theme-toggle-label {
+  background-color: var(--color);
+  /* Green when checked */
+}
+
+header .blob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--orange);
+  /* Change this color for the blob */
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+header .theme-toggle-checkbox:checked+.theme-toggle-label .blob {
+  transform: translateX(28px);
+  right: 0;
+}
+
+header .icons-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+header .icons-container span {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.5;
+  /* Adjust the transparency as needed */
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 2;
+  padding: 2px;
+}
+
+header .icons-container span i {
+  color: var(--white);
+}
+
+header .theme-toggle-checkbox:checked+.theme-toggle-label .icons-container .sun-icon {
+  opacity: 0;
+}
+
+header .theme-toggle-checkbox:checked+.theme-toggle-label .icons-container .moon-icon {
+  opacity: 1;
+}
+
+header .theme-toggle-checkbox:not(:checked)+.theme-toggle-label .icons-container .sun-icon {
+  opacity: 1;
+}
+
+header .theme-toggle-checkbox:not(:checked)+.theme-toggle-label .icons-container .moon-icon {
+  opacity: 0;
+}
+
+.padded.toggling-swch {
+  padding: 20px 0px;
 }
 
 /* == || HEADER == */
@@ -597,16 +707,20 @@ footer {
 .footer-column ul li {
   padding: 4px 0px;
 }
-.footer-column a{
+
+.footer-column a {
   color: var(--color);
 }
-.footer-column p{
+
+.footer-column p {
   margin: 10px 0px;
 }
-.footer-column  form{
+
+.footer-column form {
   height: fit-content;
 }
-.footer-column  form input{
+
+.footer-column form input {
   height: 65px;
   width: 100%;
   background-color: var(--back-color);
@@ -615,7 +729,8 @@ footer {
   outline: none;
   padding: 0px 30px;
 }
-.footer-column  form button{
+
+.footer-column form button {
   height: 65px;
   width: 40%;
   background-color: var(--orange);
@@ -629,6 +744,7 @@ footer {
   font-weight: 700;
   line-height: 150%;
 }
+
 .copyright {
   text-align: center;
   border-top: 2px solid #636363;

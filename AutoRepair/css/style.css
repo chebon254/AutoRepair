@@ -156,7 +156,7 @@ svg #lg-txt {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 54px;
+  height: 48px;
   width: 100%;
   max-width: 540px;
   min-width: 280px;
@@ -222,7 +222,7 @@ input[type="placeholder"] {
 
 .nav-form button {
   width: 104px;
-  height: 50px;
+  height: 48px;
   flex-shrink: 0;
   background-color: var(--orange);
   color: var(--white);
@@ -587,7 +587,15 @@ main {
   font-weight: 700;
   line-height: 150%;
 }
-
+.banner-card .text a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+}
+.banner-card .text a svg{
+  margin-left: 10px;
+}
 .banner-card.st .text a,
 .banner-card.nd .text a {
   color: var(--white);
@@ -735,7 +743,7 @@ footer {
   width: 40%;
   background-color: var(--orange);
   border: 0px;
-  color: var(--white);
+  color: var(--black);
   border-radius: 20px;
   outline: none;
   margin: 10px 0px;
@@ -743,6 +751,10 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+}
+
+.footer-column form button svg{
+  margin-left: 4px;
 }
 
 .copyright {

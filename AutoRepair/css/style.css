@@ -427,13 +427,13 @@ main {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 20px 0px;
+  padding: 20px 15px;
 }
 
 .banner-card {
   height: fit-content;
   width: 100%;
-  max-width: 560px;
+  max-width: 565px;
   min-width: 280px;
   margin: 10px 10px;
   position: relative;

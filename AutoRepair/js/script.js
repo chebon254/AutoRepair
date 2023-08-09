@@ -1,16 +1,14 @@
 // == Theme Change Script == //
-const DarkClick = document.querySelector(".btn-dark-theme");
-const LightClick = document.querySelector(".btn-light-theme");
+const themeToggle = document.getElementById("theme-toggle");
+    const body = document.querySelector('.body-effect');
 
-// == Dark Theme == //
-DarkClick.onclick = () => {
-  document.querySelector('.body-effect').setAttribute("data-theme", "dark_theme");
-}
-
-// == Dark Theme == //
-LightClick.onclick = () => {
-  document.querySelector('.body-effect').setAttribute("data-theme", "light_theme");
-}
+    themeToggle.addEventListener("change", () => {
+      if (themeToggle.checked) {
+        body.setAttribute("data-theme", "dark_theme");
+      } else {
+        body.setAttribute("data-theme", "light_theme");
+      }
+    });
 // == End of Theme Change Script == //
 
 /* == BACK TO TOP == */

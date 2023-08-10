@@ -498,7 +498,7 @@ header .theme-toggle-checkbox:not(:checked)+.theme-toggle-label .icons-container
 }
 
 .padded.toggling-swch {
-  padding: 20px 0px;
+  padding: 4px 0px;
 }
 
 /* == || HEADER == */

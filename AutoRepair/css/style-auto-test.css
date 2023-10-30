@@ -1,1 +1,179 @@
+/* == MAIN == */
+main {
+  width: 100%;
+  height: fit-content;
+  padding: 140px 0px 0px;
+  background-color: var(--back-color);
+}
 
+.outsourced-banner {
+  width: 100%;
+  padding: 0px 0px 60px;
+}
+
+.outsourced-banner-container {
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 15px;
+}
+
+.outsourced-banner-card {
+  height: fit-content;
+  width: 100%;
+  max-width: 565px;
+  min-width: 280px;
+  margin: 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.outsourced-banner-card .text {
+  position: absolute;
+  z-index: 2;
+  padding: 40px;
+  top: 0px;
+  width: 100%;
+  height: fit-content;
+}
+
+.outsourced-banner-card .text h2 {
+  color: var(--white);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.outsourced-banner-card.st .text h2,
+.outsourced-banner-card.nd .text h2 {
+  color: var(--white);
+}
+
+.outsourced-banner-card.rd .text h2,
+.outsourced-banner-card.th .text h2 {
+  color: var(--black);
+}
+
+.outsourced-banner-card .text p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 20px 0px;
+}
+
+.outsourced-banner-card.st .text p,
+.outsourced-banner-card.nd .text p {
+  color: var(--white);
+}
+
+.outsourced-banner-card.rd .text p,
+.outsourced-banner-card.th .text p {
+  color: var(--black);
+}
+
+.outsourced-banner-card .text a {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.outsourced-banner-card .text a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+}
+.outsourced-banner-card .text a svg{
+  margin-left: 10px;
+}
+.outsourced-banner-card.st .text a,
+.outsourced-banner-card.nd .text a {
+  color: var(--white);
+}
+
+.outsourced-banner-card.rd .text a,
+.outsourced-banner-card.th .text a {
+  color: var(--black);
+}
+
+.outsourced-banner-card img {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  vertical-align: middle;
+}
+
+.outsourced-choice {
+  padding: 60px 0px;
+}
+
+.outsourced-choice-container {
+  height: fit-content;
+}
+
+.outsourced-choice-container h1.title {
+  text-align: center;
+  color: var(--color);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.outsourced-choice-container p.title {
+  text-align: center;
+  color: var(--orange);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.outsourced-choice-cards {
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0px 20px;
+}
+
+.outsourced-choice-card {
+  width: 100%;
+  max-width: 560px;
+  min-width: 280px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px
+}
+
+.outsourced-choice-card .card-left {
+  padding: 0px 20px 0px 0px;
+}
+
+.outsourced-choice-card .card-left span {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+}
+
+.outsourced-choice-card h2 {
+  color: var(--color);
+  font-style: normal;
+  font-weight: 600;
+  margin: 0px 0px 16px;
+}
+
+.outsourced-choice-card p {
+  color: var(--color);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* == || MAIN == */
